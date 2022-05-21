@@ -9,10 +9,19 @@
 
 	const change = () => {
 		name = vikenGenerator();
-		let tmp = vikenDesperateCryForHelp;
-		while (tmp === vikenDesperateCryForHelp)
-			tmp = generateHelpMeSentence();
-		vikenDesperateCryForHelp = tmp;
+		const [firstName, lastName] = name.split(' ');
+		if (name == "Viken Kojakian")
+		vikenDesperateCryForHelp = "Wow, you should play lottery, the chances were so small"
+		else if (firstName === "Viken")
+		vikenDesperateCryForHelp = "You got my name right, but ..."
+		else if (lastName === "Kojakian")
+		vikenDesperateCryForHelp = "Wow, now get my name right"
+		else {
+			let tmp = vikenDesperateCryForHelp;
+			while (tmp === vikenDesperateCryForHelp)
+				tmp = generateHelpMeSentence();
+			vikenDesperateCryForHelp = tmp;
+		}
 	};
 </script>
 
