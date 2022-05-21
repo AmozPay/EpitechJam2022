@@ -32,7 +32,8 @@
 		<h1>
 			Your Viken Kojakian name is:
 		</h1>
-		<p>{name}</p>
+		<p class="name">{name}</p>
+		<a class="external_links" href="https://lorenzo-generator.vercel.app/">Lorenzo Generator</a>
 	</div>
 </main>
 
@@ -70,10 +71,16 @@
 		font-size: 2vh;
 	}
 
-	p {
+	.name {
 		font-size: 5vh;
 		font-weight: 700;
 	}
+
+	.external_links {
+		position: absolute;
+		bottom: 10px;
+	}
+
 
 	@media (min-width: 640px) {
 		main {
